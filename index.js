@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
     userArray[userArray.length] = new PlayerObject(userArray.length, "Elend", "Venture", 40);
     userArray[userArray.length] = new PlayerObject(userArray.length, "Godking", "Susebron", 30);
 
-    createList();  // need this for first time index.html is pulled down
+    //createList();  // need this for first time index.html is pulled down
 
     // need this for when I go back to home page
     $(document).on("pagebeforeshow", "#home", function (event) {   // have to use jQuery 
@@ -46,9 +46,9 @@ document.addEventListener("DOMContentLoaded", function () {
         userArray[userArray.length] = new PlayerObject(userArray.length, document.getElementById('firstName').value, document.getElementById('lastName').value, 10);
         document.location.href = "#home";
     });
-    document.getElementById("buttonNewAccount").addEventListener("click", function () {
-        document.location.href = "#newaccount";
-    });
+    //document.getElementById("buttonNewAccount").addEventListener("click", function () {
+    //    document.location.href = "#newaccount";
+    //});
     document.getElementById("ButtonBet").addEventListener("click", function () {
         buttonClicked();
     });
