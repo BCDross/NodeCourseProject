@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-var debug = require('debug')('ejsApp');
+var debug = require('debug')('NodeCourseProject');
 var app = require('../app');
 
 if (app.get('env') === 'development'){
